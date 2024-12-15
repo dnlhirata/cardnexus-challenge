@@ -1,0 +1,46 @@
+{
+  "name": "coding-assessment",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "NODE_ENV=development npx ts-node ./src",
+    "dev:hot": "nodemon --exec \"npm run dev\" --watch ./src -e ts",
+    "test": "NODE_ENV=test npx jest ./spec",
+    "test:hot": "nodemon --exec \"npm run test\" --watch ./src --watch ./spec -e ts",
+    "ingest-data": "ts-node ./src/scripts/ingest-data.ts"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@types/qs": "^6.9.17",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "jet-logger": "^2.0.1",
+    "module-alias": "^2.2.3",
+    "moment": "^2.30.1",
+    "mongoose": "^8.9.0",
+    "morgan": "^1.10.0",
+    "qs": "^6.13.1",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jasmine": "^5.1.4",
+    "@types/jest": "^29.5.14",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.9.0",
+    "@types/supertest": "^6.0.2",
+    "jasmine": "^5.4.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  }
+}

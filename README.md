@@ -1,32 +1,27 @@
-# CardNexus
-
-## Project Setup
+## Project setup
 
 Follow these instructions to set up and start the project.
 
 ### Prerequisites
 
 Make sure you have the following installed:
-- [Docker](https://nodejs.org/)
+- Docker
 
 ### Installation
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/cardnexus.git
-    cd cardnexus
-    ```
+1. Clone the repository
+2. Move to the directory
 
-### Starting the Project
+### Starting the project
 
-1. Start the MongoDB server:
+1. Start the server and database:
     ```sh
     docker compose up -d
     ```
 
 The application should now be running at `http://localhost:3000`.
 
-### Ingesting Initial Data
+### Ingesting initial data
 
 1. Run the data ingestion script:
     ```sh
@@ -35,7 +30,7 @@ The application should now be running at `http://localhost:3000`.
 
 This script will populate the database with the initial data for the project (found at src/data).
 
-### API Endpoint
+### API endpoint
 The backend exposes several filtering options for retrieving cards. You can filter cards based on the following fields:
 - game
 - name (supports partial text matching)

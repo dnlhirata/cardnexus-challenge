@@ -1,6 +1,6 @@
 
 import { readJSONFile } from "@src/common/file-utils";
-import type { ICard, LorcanaRarity, MTGRarity } from "@src/models/Card";
+import type { Game, ICard, LorcanaRarity, MTGRarity } from "@src/models/Card";
 import { bulkInsertCards } from "@src/repos/CardRepo";
 
 export const ingestCardsFromJSON = async (game: string, filePath: string) => {
@@ -17,7 +17,7 @@ export const ingestCardsFromJSON = async (game: string, filePath: string) => {
 
       const formatedCard = {
         _id: id,
-        game: game as "mtg" | "lorcana",
+        game: game as Game,
         name,
         rarity: rarity as MTGRarity | LorcanaRarity,
         attributes,

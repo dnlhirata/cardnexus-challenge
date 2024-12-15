@@ -6,11 +6,13 @@ Follow these instructions to set up and start the project.
 
 Make sure you have the following installed:
 - Docker
+- Node/npm
 
 ### Installation
 
 1. Clone the repository
 2. Move to the directory
+3. Run `npm install`
 
 ### Starting the project
 
